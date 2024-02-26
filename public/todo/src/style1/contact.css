@@ -1,0 +1,67 @@
+.head{
+    background: url("Images/call.jpg");
+    background-size: cover;
+    height: 300px;
+    margin: 10px;
+    font-size: 60px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divide{
+    display: flex;
+}
+.meet,.reach{
+    width: 700px;
+    text-align: center;
+    margin: 10px;
+}
+.reach{
+    background-color: #a552e6;
+    color: #fff;
+}
+h2{
+    margin: 10px;
+}
+h4{
+    margin: 10px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: rgba(250, 235, 215, 0.668);
+}
+.submit{
+        font:normal normal 300 1.3em 'Open Sans';
+        text-decoration:none;
+        color:rgba(255, 255, 255, 1);
+        background-color:transparent;
+        border: 1px solid rgba(255, 255, 255, 1);
+        border-radius:100px;
+        padding: .3em 1.2em;
+        margin:5px;
+        background-size: 200% 100%;
+        background-image: linear-gradient(to right, transparent 50%, rgba(255, 255, 255, 1) 50%);
+        transition: background-position .3s cubic-bezier(0.19, 1, 0.22, 1) .1s, color .5s ease 0s, background-color .5s ease;
+        float: right;
+        margin-top: 15px;
+      }
+    .submit:hover{
+        color:#a552e6;
+        background-color:rgba(255, 255, 255, 1);
+        background-position: -100% 100%;
+    }
+@media (max-width:415px) {
+    .divide{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .meet,.reach{
+        width: 400px;
+    }
+    .head{
+        color: #fff;
+    }
+}

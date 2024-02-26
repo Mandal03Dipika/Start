@@ -1,0 +1,35 @@
+.move{
+    animation: move 2s infinite ;
+}
+
+@keyframes move{
+    0%{
+        transform: rotateY(360deg);
+        opacity: 1;
+    }
+    25%{
+        transform: rotateY(360deg);
+        opacity: 0.4;
+    }
+    50%{
+        transform: rotateY(-360deg);
+        opacity: 0.6;
+    }
+    75%{
+        transform: rotateY(-360deg);
+        opacity: 0.8;
+    }
+    100%{
+        transform: rotateY(360deg);
+        opacity: 1;
+    }
+}
+.die-container{
+    margin-left: -150px;
+    margin-top: -315px;
+    width: 150px;
+}
+.player2-container{
+    margin-bottom: -325px;
+    width: 150px;
+}

@@ -1,0 +1,74 @@
+.calendar{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 497px;
+    margin-top: 90px;
+    margin-left: 130px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 30px;
+    width: 80%;
+    box-shadow: 0 20px 25px 25px rgba(0,0,0,0.5);
+    color: #fff;
+}
+.calendar .text{
+    position: absolute;
+    box-shadow: 0 20px 25px 25px rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+    width: 500px;
+    padding: 30px;
+    margin-left: 570px;
+}
+.calendar .date{
+    width: 380px;
+    padding: 30px;
+}
+.calendar h3{
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 15px 30px;
+}
+.calendar .days{
+    display: flex;
+    flex-wrap: wrap;
+}
+.calendar .day,.calendar .number,.calendar .pre-number{
+    height: 45px;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calendar .day{
+    font-size: 85%;
+}
+.calendar .pre-number{
+    color: rgba(238, 238, 238, 0.4);
+}
+.calendar .number:hover,.calendar .pre-number:hover{
+    border: 2px solid rgba(238, 238, 238, 0.4);
+}
+.date i{
+    margin-top: 6px;
+    cursor: pointer;
+}
+@media (max-width: 460px)
+{
+    .calendar{
+        margin-top: 30px;
+        margin-left: 0;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+    .calendar .text{
+        width: 378px;
+        margin-left: 0;
+        margin-top: 105%;
+    }
+}

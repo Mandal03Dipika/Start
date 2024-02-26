@@ -1,0 +1,49 @@
+.banner-text{
+    position: absolute;
+    top: 35%;
+    text-align: center;
+    left: 25%;
+}
+.banner-text h2{
+    color: black;
+    font-size: 80px;
+    margin: 0;
+}
+.banner-text h2 span{
+    color: #fcfc;
+}
+.banner-text p{
+    color: black;
+    font-size: 18px;
+    margin: 0;
+    font-weight: bold;
+}
+.banner-text .btn{
+    display: inline-block;
+    padding: 7px 25px;
+    margin-top: 5%;
+    font-weight: bold;
+    background: #fcfc;
+    border-radius: 40px;
+    font-size: 20px;
+    color: #1f242d;
+    letter-spacing: 1px;
+}
+.banner-text .btn:hover{
+    border: 3px solid #fcfc;
+    box-shadow: 5px 5px 5px 5px #fcfc;
+}
+
+@media (max-width: 460px) {
+    .banner-text{
+        top: 35%;
+        left: 2%;
+    }
+    .banner-text h2{
+        font-size: 68px;
+        margin: 5px;
+    }
+    .banner-text p{
+        font-size: 28px;
+    }
+}
